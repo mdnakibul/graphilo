@@ -1,0 +1,403 @@
+*{
+	margin:0;
+	border:0;
+	box-sizing:border-box;
+}
+/*
+=======================================================
+Adding fonts
+=======================================================
+*/
+
+@font-face{
+	font-family: 'poppins';
+	src: url('../fonts/Poppins-Regular.ttf');
+}
+@font-face{
+	font-family: 'raleway';
+	src: url('../fonts/raleway.medium.ttf');
+}
+.section-padding{
+	padding:70px;
+}
+.raleway-font{
+    font-family: 'raleway';
+}
+.poppins-font{
+    font-family:'poppins';
+}
+.section-bg{
+    background: #f4f4f4;
+}
+.content-top-space{
+    margin-top: 90px;
+}
+/*
+=======================================================
+Header Section Styling 
+=======================================================
+*/
+div#silonToggler ul li a.nav-link {
+    font-family: poppins;
+	color:#333;
+}
+
+#btn-hire {
+    background: transparent;
+    color: #1769ff;
+    border: 2px solid #669afa;
+    border-radius: 19px;
+    margin-left: 20px;
+    font-family:'poppins';
+}
+#btn-hire:hover{
+	background:#1769ff;
+	color:white;
+	transition:all 0.3s;
+}
+header{
+    min-height:100vh;
+    background-image: url("../img/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    overflow: auto;
+}
+.header-description{
+    width: 50%;
+    padding-bottom: 20px;
+}
+.header-description h2{
+	font-family:raleway;
+	font-size: 36px;
+    color: #333;
+    font-weight: 500;
+}
+.header-description h1{
+	font-family:poppins;
+	font-size: 48px;
+    font-weight: 500;
+    color: #333;
+}
+.header-description p{
+	font-family:raleway;
+	font-size:16px;
+	color:#777777;
+}
+button.work-btn {
+    font-family: poppins;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: #1769ff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    text-transform: capitalize;
+}
+
+button.work-btn:hover{
+	background:#fff;
+	color:#1769ff;
+	border:2px solid #1769ff;
+	transition:0.3s;
+}
+/*
+=======================================================
+Service Section Styling 
+=======================================================
+*/
+section.services {
+	background: #fafafa;
+	position: relative;
+}
+h1.section-title {
+    font-family: 'poppins';
+    font-size: 32px;
+    font-weight: 600;
+    color: #333333;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 3;
+}
+
+h1.section-title::after {
+	content: "services";
+	position: absolute;
+	z-index: -1;
+	color: #eeeeee;
+	width: 100%;
+	height: auto;
+	left: 0%;
+	top: -52%;
+	font-size: 55px;
+	font-family: 'poppins';
+	line-height: 75px;
+}
+h1.section-title.portfolio-section-title::after{
+    content: "portfolio";
+}
+.service-block {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transition:all 0.5s;
+}
+.service-block:hover {
+    background: #1769ff;
+    box-shadow: 0px 10px 11px 3px #d9d9d9;
+}
+.service-block:hover *{
+    color:#fff;
+}
+.service-block i {
+    color: #4184fe;
+    font-size: 40px;
+    line-height: 1.8em;
+}
+
+.service-block h3::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 60px;
+    background: #1769ff;
+    left: 20%;
+    top: 106%;
+    }
+
+.service-block h3 {
+    font-family: 'poppins';
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #222222;
+    position: relative;
+    line-height: 1.8em;
+}
+.service-block p {
+    font-family: 'poppins';
+    font-size: 15px;
+    color: #777777;
+    padding-top: 10px;
+    line-height: 1.8em;
+}
+
+/*
+=======================================================
+Portfolio Section Styling 
+=======================================================
+*/
+
+.portfolio-block {
+    margin-bottom: 30px;
+    position: relative;
+}
+.portfolio-block-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #1769ff;
+    top: 0;
+    left: 0;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.portfolio-block-overlay p {
+    font-size: 18px;
+}
+
+.portfolio-block-overlay h3 {
+    font-size: 24px;
+    font-weight: 600;
+    position: relative;
+}
+
+.portfolio-block-overlay h3::after {
+    content: ""
+    ;position: absolute;
+    width: 47px;
+    height: 3px;
+    background: #5c95fd;
+    left: 40%;
+    bottom: -50%;
+    }
+.portfolio-block:hover .portfolio-block-overlay{
+    display: flex;
+}
+/*
+=======================================================
+Call to action Section Styling 
+=======================================================
+*/
+section.call-to-action h2 {
+    font-size: 34px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 40px;
+}
+.call-to-action p {
+    color: #777;
+    line-height: 28px;
+}
+/*
+=======================================================
+Testimonial Section Styling 
+=======================================================
+*/
+#testimonial-slider{
+    padding-bottom:100px;
+}
+h2.testimonial-title {
+    font-size: 50px;
+    text-transform: capitalize;
+    color: #0a0b0c;
+    position: relative;
+    z-index: 2;
+}
+
+h2.testimonial-title::after {
+    content: "“";
+    transform: rotate(180deg);
+    position: absolute;
+    width:20px;
+    height:auto;
+    bottom: -199%;
+    left: 25%;
+    font-size:750px;
+    color:#ddd;
+    font-family: 'poppins';
+    font-weight: 400;
+    z-index: -1;
+    }
+
+img.client-photo {
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+h3.client-name {
+    font-size: 17px;
+    font-weight: 600;
+    color: #333;
+}
+
+p.client-designation {
+    font-size: 15px;
+    color: #8b8b8b;
+    font-weight: 500;
+}
+
+p.client-feedback {
+    font-size: 17px;
+    color: #0a0b0c;
+    line-height: 1.8em;
+    position: relative;
+    z-index: 2;
+}
+#testimonial-slider ul.carousel-indicators li {
+    background: #bcbcbc;
+    border-radius:50%;
+    height:10px;
+    width:20px;
+    padding:0px;
+}
+#testimonial-slider ul.carousel-indicators li.active {
+    background: #1769ff;
+    position:relative;
+}
+#testimonial-slider ul.carousel-indicators li.active::after{
+    content:"";
+    position:absolute;
+    background:transparent;
+    width:150%;
+    height:400%;
+    border:2px solid #1769ff;
+    top:-150%;
+    left:-25%;
+    border-radius:50%;
+}
+
+/*
+=======================================================
+Footer Section Styling 
+=======================================================
+*/
+ul.footer-menu li {
+    list-style: none;
+    display: inline;
+    padding: 5px 10px;
+}
+ul.footer-menu li a {
+    color: #222;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+ul.footer-menu {
+    display: inline-block;
+}
+
+.search-box input {
+    border: 1px solid #9b9b9b;
+    border-radius: 25px;
+    padding: 5px 30px;
+    color: #444444;
+}
+.social-menu ul li {
+    display: inline-block;
+    list-style: none;
+    background: #ebebeb;
+    border-radius: 50%;
+    margin-right: 20px;
+    padding: 10px 18px;
+    transition:all 0.5s;
+}
+
+.social-menu ul li a {
+    color: #a7a7a7;
+    font-size: 24px;
+}
+.social-menu ul li:hover{
+    background:#32ccfe;
+}
+.social-menu ul li:hover a{
+    color:#fff;
+}
+.social-menu {
+    margin-top: 30px;
+}
+footer {
+    padding: 30px 0px;
+    border-top: 1px solid #ddd;
+}
+footer p{
+    font-size: 16px;
+    color:#777;
+}
+/* Back to top button  */
+button#gtt {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right:30px;
+    z-index:99;
+    border:none;
+    background:blueviolet;
+    color:#ffffff;
+    padding:10px;
+    border-radius:5px;
+    font-size:20px;
+    font-weight:600;
+    transition: all 0.5s;
+}
+button#gtt:hover{
+    opacity:0.6l;
+}

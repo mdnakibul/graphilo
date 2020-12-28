@@ -1,0 +1,37 @@
+@media screen and (min-width:992px){
+    div#silonToggler ul li a.nav-link:hover,ul.footer-menu li:hover{
+        border-bottom: 2px solid #1769ff;
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width:800px){
+    header{
+        background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)), url("../img/banner.jpg") ;
+        background-size: cover;
+    }
+    .header-description h1,.header-description h2,.header-description p{
+        color: white;
+    }
+    .header-description{
+        width: 100%;
+        text-align: center;
+    }
+    .main-menu{
+        background: rgb(232 228 228);
+        margin-bottom: 20px;
+    }
+    #btn-hire{
+        margin-left: 0;
+    }
+    .social-menu ul li{
+        margin-bottom:10px;
+    }
+}
+@media screen and (max-width:383px){
+    .header-description h1,.header-description h2{
+        font-size: 6vw;
+    }
+    h2.testimonial-title{
+        font-size: 8vw;
+    }
+}
